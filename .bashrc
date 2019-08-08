@@ -1,4 +1,5 @@
 # ~/.bashrc
+#set -o xtrace
 [ -z "$PS1" ] && return
 
 case $- in
@@ -63,7 +64,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
 
 export PS1="\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\][\[\e[33m\]\w\[\e[m\]]\[\e[33m\]:\[\e[m\]\[\e[32m\]\\$\[\e[m\] "
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.

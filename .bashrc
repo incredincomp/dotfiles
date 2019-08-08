@@ -38,6 +38,7 @@ export LS_OPTIONS='--color=auto'
 eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
 
+shopt -s expand_aliases
 shopt -s checkwinsize
 shopt -s globstar
 shopt -s histappend

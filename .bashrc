@@ -19,6 +19,10 @@ export HISTSIZE=500
 
 export HISTCONTROL=erasedups:ignoredups:ignorespace
 
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors -b)"
+alias ls='ls $LS_OPTIONS'
+
 shopt -s checkwinsize
 
 shopt -s histappend

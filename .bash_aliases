@@ -36,7 +36,7 @@ alias ipe="curl ipinfo.io/ip"
 
 # curl hacks
 alias header="curl -I"
-alias headerc="curl -I --compress"
+alias headerc="curl -I --compressed"
 
 # system usage checks
 alias meminfo="free -m -l -t"

@@ -39,9 +39,9 @@ shopt -s globstar
 shopt -s histappend
 
 stty rows 30
-stty cols 110
+stty columns 110
 
-PROMPT_COMMAND='history -a'
+PROMPT_COMAND='history -a'
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).

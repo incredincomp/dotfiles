@@ -1,3 +1,21 @@
+alias suspend="sudo systemctl suspend"
+
+# git stuff. set up git dev env as /git_stuff mine and theirs to dif between your stuff and theirs
+alias gitmine="cd ~/git_stuff/mine/ && ls -al"
+alias gityour="cd ~/git_stuff/theirs/ && ls -al"
+alias gitp="git pull"
+alias gitca="git commit -a"
+alias gitps="git push"
+
+# just for use with updating this for dev
+alias sas="cp .bashrc .bash_aliases ~/ && cd ~ && . .bashrc && . .bash_aliases"
+
+# basic rewrites
+alias gohome="cd ~"
+alias ls="ls --color=auto"
+alias ll="ls -al"
+alias l.="ls -d .* --color=auto"
+alias c="clear"
 alias cd..="cd .."
 alias ..="cd .."
 alias mkdir="mkdir -pv"
@@ -5,21 +23,12 @@ alias wget="wget -c"
 alias rm="rm -I --preserve-root"
 alias histg="history | grep"
 alias grep="grep --color=auto"
-alias gitmine="cd ~/git_stuff/mine/ && ls -al"
-alias gityour="cd ~/git_stuff/theirs/ && ls -al"
-alias suspend="sudo systemctl suspend"
-alias gitp="git pull"
-alias gitca="git commit -a"
-alias gitps="git push"
-alias sas="cp .bashrc .bash_aliases ~/ && cd ~ && . .bashrc && . .bash_aliases"
-alias gohome="cd ~"
-alias ls="ls --color=auto"
-alias ll="ls -al"
-alias l.="ls -d .* --color=auto"
-alias c="clear"
+
+# program aliases
 alias sc="kazam"
 alias vpnon="expressvpn connect"
 alias vpnoff="expressvpn disconnect"
+
 # networking stuffs
 alias ping="ping -c 5"
 alias ports="netstat -tulanp"
@@ -31,9 +40,11 @@ alais headerc="curl -I --compress"
 
 # system usage checks
 alais meminfo="free -m -l -t"
+
 # top of memory
 alias psmem="ps auxf | sort -nr -k 4"
 alias psmem10="ps auxf | sort -nr -k 4 | head -10"
+
 # top of cpu
 alias pscpu="ps auxf | sort -nr -k 3"
 alias pscpu10="ps auxf | sort -nr -k 3 | head -10"

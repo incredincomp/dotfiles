@@ -36,10 +36,10 @@ alias ipe="curl ipinfo.io/ip"
 
 # curl hacks
 alias header="curl -I"
-alais headerc="curl -I --compress"
+alias headerc="curl -I --compress"
 
 # system usage checks
-alais meminfo="free -m -l -t"
+alias meminfo="free -m -l -t"
 
 # top of memory
 alias psmem="ps auxf | sort -nr -k 4"

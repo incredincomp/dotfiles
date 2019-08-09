@@ -38,8 +38,6 @@ shopt -s checkwinsize
 shopt -s globstar
 shopt -s histappend
 
-stty rows 30
-stty columns 110
 
 PROMPT_COMAND='history -a'
 # enable programmable completion features (you don't need to enable

@@ -1,3 +1,4 @@
+# has not been tested
 source ~/dotfiles/.bashrc
 sudo apt update && sudo apt upgrade
 sudo apt install vim

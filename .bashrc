@@ -38,7 +38,6 @@ shopt -s checkwinsize
 shopt -s globstar
 shopt -s histappend
 
-resize -s 30 110
 stty rows 30
 stty cols 110
 

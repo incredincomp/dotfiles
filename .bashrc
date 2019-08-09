@@ -38,6 +38,8 @@ shopt -s checkwinsize
 shopt -s globstar
 shopt -s histappend
 
+resize -s 25 120
+
 PROMPT_COMMAND='history -a'
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

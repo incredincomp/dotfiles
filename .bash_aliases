@@ -28,6 +28,7 @@ alias grep="grep --color=auto"
 alias sc="kazam"
 alias vpnon="expressvpn connect"
 alias vpnoff="expressvpn disconnect"
+alias changemac="sudo macchanger -rb wlp2s0"
 
 # networking stuffs
 alias ping="ping -c 5"

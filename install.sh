@@ -2,7 +2,7 @@
 # has not been tested
 
 install_Dotfiles () {
-cp .bashrc .bash_aliases ~/ && cd ~ && . .bashrc && . .bash_aliases
+cp .bashrc .bash_aliases ~/ && cd ~ && source .bashrc && source .bash_aliases
 }
 
 wallpaper_Setting () {

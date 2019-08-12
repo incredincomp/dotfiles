@@ -11,8 +11,8 @@ gsettings set org.gnome.desktop.background picture-uri file://"$PWD"/images/wall
 }
 
 main_Install () {
-    if sudo apt update && sudo apt upgrade --qq ; then
-        if sudo apt install vim wireshark sqlmap ruby nmap macchanger kismet htop git gimp ; then
+    if sudo apt update && sudo apt upgrade -y ; then
+        if sudo apt install vim wireshark sqlmap ruby nmap macchanger kismet htop git gimp curl ; then
             return
         else
             printf "install failed, fixing broken"
@@ -26,6 +26,6 @@ metasploit_Config () {
 }
 
 install_Dotfiles
-wallpaper-Setting
+wallpaper_Setting
 main_Install
 metasploit_Config

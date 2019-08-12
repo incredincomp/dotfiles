@@ -11,6 +11,7 @@ cp .bashrc .bash_aliases ~/ && cd ~ && source .bashrc && source .bash_aliases
 wallpaper_Setting () {
 # set wallpaper attempt number 1
 gsettings set org.gnome.desktop.background picture-uri file://"$PWD"/images/wallpaper-1.jpg
+break
 }
 
 main_Install () {

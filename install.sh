@@ -17,6 +17,7 @@ main_Install () {
         else
             printf "install failed, fixing broken"
             sudo apt --fix-broken install
+        fi
     fi
 }
 

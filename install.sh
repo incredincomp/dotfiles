@@ -1,5 +1,8 @@
 #!/bin/sh
 # has not been tested
+# to do
+# install burp ce
+# figure a way to add all relevant programs to favorite bar
 
 install_Dotfiles () {
 cp .bashrc .bash_aliases ~/ && cd ~ && source .bashrc && source .bash_aliases

@@ -16,12 +16,15 @@ break
 
 main_Install () {
     if sudo apt update && sudo apt upgrade -y ; then
-        if sudo apt install vim wireshark sqlmap ruby nmap macchanger kismet htop git gimp curl ; then
+        if sudo apt install vim wireshark sqlmap ruby nmap macchanger kismet htop gimp curl ; then
             return
         else
             printf "install failed, fixing broken"
             sudo apt --fix-broken install
         fi
+    else
+        printf "install failed, fixing broken"
+        sudo apt --fix-broken install
     fi
 }
 
@@ -29,7 +32,24 @@ metasploit_Config () {
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
 }
 
+chrome_Config () {
+    echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
+    wget https://dl.google.com/linux/linux_signing_key.pub
+    sudo apt-key add linux_signing_key.pub
+    sudo apt update
+    sudo apt install google-chrome-stable -y
+}
+
+java_Config () {
+    sudo apt install openjdk-8-jre
+}
+
+#burp_Config
+#curl https://portswigger.net/burp/releases/download?product=community&version=[2-9].[1-9].[02-99]&type=jar
+#}
+
 install_Dotfiles
 wallpaper_Setting
 main_Install
 metasploit_Config
+chrome_Config

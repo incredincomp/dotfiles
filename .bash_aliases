@@ -29,7 +29,7 @@ alias sc="kazam"
 alias vpnon="expressvpn connect"
 alias vpnoff="expressvpn disconnect"
 alias changemac="sudo macchanger -rb wlp2s0"
-
+alias dvwa="sudo docker run --rm -it -p 80:80 vulnerables/web-dvwa"
 # networking stuffs
 alias ping="ping -c 5"
 alias ports="netstat -tulanp"
